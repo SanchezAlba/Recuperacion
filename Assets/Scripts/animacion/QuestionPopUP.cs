@@ -27,7 +27,7 @@ public class QuestionPopUP : MonoBehaviour
     {
         
         gameObject.SetActive(true);
-        LeanTween.scale(containerPopUp, new Vector3(1.0f, 1.0f, 1.0f), 0.5f).setEaseOutBounce();
+        LeanTween.scale(containerPopUp, new Vector3(1f, 1f, 1f), 0.5f).setEaseOutBounce();
     }
 
 }
