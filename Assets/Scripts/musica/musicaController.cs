@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 
-public class musicaController : MonoBehaviour
+public class musicaController : MonoBehaviour, ISelectHandler
 {
     public AudioSource musicaBoton;
     public AudioSource musicaAnterior1;
