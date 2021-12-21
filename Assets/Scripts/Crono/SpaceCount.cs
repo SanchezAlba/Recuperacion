@@ -43,5 +43,6 @@ public class SpaceCount : MonoBehaviour
     {
         timer = 5.0f;
         timer = timer - Time.deltaTime;
+        puntos = 0;
     }
 }
