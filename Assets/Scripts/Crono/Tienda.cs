@@ -20,35 +20,43 @@ public class Tienda : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        comprar.SetActive(false);
+        noComprar.SetActive(false);
+
         labelSaldo.text = saldo.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void Objeto1()
     {
         labelPrecio.text = precio1.ToString();
+        if (precio1 <= saldo)
+        {
+            comprar.SetActive(true);
+        }
+
+        else
+        {
+            noComprar.SetActive(true);
+        }
     }
 
     public void Objeto2()
     {
         labelPrecio.text = precio2.ToString();
-    }
+        if(precio2> saldo)
+        {
+            noComprar.SetActive(true);
+        }
 
-    public void Comprar()
-    {
-      if(precio1 <= saldo)
+        else
         {
             comprar.SetActive(true);
-        }
-      else
-        {
-            comprar.SetActive(false);
-            noComprar.SetActive(true);
         }
     }
 }
