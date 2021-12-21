@@ -161,7 +161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'num.espacio
+  m_text: 'RESULTADO
 
 '
   m_isRightToLeft: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 33.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -983,7 +983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &295347127
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1290,18 +1290,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1737503944}
         m_TargetAssemblyTypeName: SpaceCount, Assembly-CSharp
         m_MethodName: Restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2025636269}
-        m_TargetAssemblyTypeName: CountDown, Assembly-CSharp
-        m_MethodName: restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3857,7 +3845,7 @@ GameObject:
   - component: {fileID: 1737503945}
   - component: {fileID: 1737503944}
   m_Layer: 0
-  m_Name: G.O esoacio
+  m_Name: G.O espacio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3870,15 +3858,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737503943}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a808689ee4d6fa4087b55f3167bcb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labelCuenta: {fileID: 5682963}
+  labelCuenta: {fileID: 2020928507}
   timer: 5
+  minTimer: 0
   puntos: 0
-  labelPuntos: {fileID: 2020928507}
+  labelPuntos: {fileID: 5682963}
 --- !u!4 &1737503945
 Transform:
   m_ObjectHideFlags: 0
@@ -3911,7 +3900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1750873263
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4654,16 +4643,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025636268}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfe67ae3a9a301e4b89625ff839c187a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 5
+  minTime: 0
   labelTimer: {fileID: 5682963}
   labelRestart: {fileID: 583829309}
   musica: {fileID: 130598900}
-  isActive: 0
+  isActive: 1
+  time: 1
 --- !u!4 &2025636270
 Transform:
   m_ObjectHideFlags: 0
