@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class SpaceCount : MonoBehaviour
 {
@@ -12,8 +13,11 @@ public class SpaceCount : MonoBehaviour
     public int puntos=0;
     public TextMeshProUGUI labelPuntos;
 
+    public Slider sliderTiempo;
+
     private void Start()
     {
+        sliderTiempo.maxValue = timer;
         
     }
 
@@ -36,7 +40,9 @@ public class SpaceCount : MonoBehaviour
             labelPuntos.text = puntos.ToString();
             
         }
-        
+
+        sliderTiempo.value = timer;
+
     }
 
     public void Restart()
