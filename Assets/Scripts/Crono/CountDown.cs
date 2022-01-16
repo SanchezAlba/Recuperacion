@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 
 public class CountDown : MonoBehaviour
@@ -11,13 +12,19 @@ public class CountDown : MonoBehaviour
     public TextMeshProUGUI labelTimer;
     public TextMeshProUGUI labelRestart;
 
+    public TMP_InputField tiempo;
+
     public AudioSource musica;
     public bool isActive = true;
 
 
     void Update()
     {
-        if(timer>minTimer)
+        
+        //float timer = float.Parse(tiempo.text);
+        
+
+        if (timer>minTimer)
         {
             timer = timer - Time.deltaTime;
             labelTimer.text = timer.ToString("0.0");
@@ -30,6 +37,8 @@ public class CountDown : MonoBehaviour
             musica.Play(); // la musica no sonaba porque estaba en el bucle infinito, entonces el timepo volviuas y todo eso
             isActive = false;
         }
+
+
     }
 
     public void restart()

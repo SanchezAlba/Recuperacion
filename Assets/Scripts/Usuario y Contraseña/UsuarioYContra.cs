@@ -41,6 +41,7 @@ public class UsuarioYContra : MonoBehaviour
     {
         popUp.SetActive(false);
         
+        
     }
    
 }

@@ -8,6 +8,8 @@ public class CronoDos : MonoBehaviour
 {
     public TextMeshProUGUI labelTiempo;
     public float tiempo;
+    public int starMinutes;
+    public int starHoras;
 
     public bool isActive = true;
     
@@ -15,7 +17,7 @@ public class CronoDos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
        
     }
 
@@ -27,6 +29,8 @@ public class CronoDos : MonoBehaviour
             labelTiempo.text = tiempo.ToString("0.0");
             tiempo += Time.deltaTime;
         }
+
+      
     }
 
 
