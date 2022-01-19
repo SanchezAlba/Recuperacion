@@ -13,12 +13,12 @@ public class ShopItems : MonoBehaviour
     void Start()
     {
         precio = Random.Range(20, 170);
-        etiquetaPrecio = GetComponentInChildren<TextMeshProUGUI>();
+        etiquetaPrecio = GetComponentInChildren<TextMeshProUGUI>();  // como funciona el GetChild; busca en un texto y así no tenemos que asiganrlo
         etiquetaPrecio.text = precio.ToString()+"€";
     }
 
    public void ClickButton()
     {
-        ShopController.instance.BuyItem(precio, GetComponent<Button>());
+        ShopController.instance.BuyItem(precio, GetComponent<Button>());  // el buy item esta llamandoa la funcion del otro script
     }
 }

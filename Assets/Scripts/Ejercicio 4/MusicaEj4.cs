@@ -55,7 +55,7 @@ public class MusicaEj4 : MonoBehaviour
             fotoPause.SetActive(false);
             fotoPlay.SetActive(true);
         }
-        else
+        else 
         {
             musica.Play();
             fotoPause.SetActive(true);
@@ -63,10 +63,10 @@ public class MusicaEj4 : MonoBehaviour
         }
     }
 
-   public void Progreso()
+   /*public void Progreso()
     {
         sliderProgresoCancion.value = musica.time;
-    }
+    }*/
    
 
 }

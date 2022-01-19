@@ -9,7 +9,7 @@ public class ShopController : MonoBehaviour
     public TextMeshProUGUI etiquetaMoney;
     public int money;
 
-    public static ShopController instance; // es static pq solo hay una tienda
+    public static ShopController instance; // es static porque solo hay una tienda
 
 
     void Start()
@@ -28,9 +28,9 @@ public class ShopController : MonoBehaviour
         }
     }
 
-    public void BuyItem(int itemPrice, Button buttonItem)
+    public void BuyItem(int itemPrice, Button buttonItem) // parametros (item price y eso) 
     {
-        if(money >= itemPrice)
+        if(money >= itemPrice) // pq no se puede poner if(money >= precio)?? precio está en el otro script
         {
             Debug.Log("Tiene dinero");
             money = money - itemPrice;
@@ -40,7 +40,7 @@ public class ShopController : MonoBehaviour
 
         else
         {
-            Debug.Log("Tienes que ahorras, ¡Pobre!");
+            Debug.Log("Tienes que ahorrar");
         }
     }
 }

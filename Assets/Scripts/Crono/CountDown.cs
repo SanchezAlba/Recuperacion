@@ -16,39 +16,50 @@ public class CountDown : MonoBehaviour
 
     public AudioSource musica;
     public bool isActive = true;
-
+    public bool activarBool = false;
 
     void Update()
     {
-        
-        //float timer = float.Parse(tiempo.text);
-        
+        //float timer = float.Parse(tiempo.text); // Sigue sin ir
+
+        if(activarBool==true)
+        {
+            timer = timer - Time.deltaTime;
+        }
+        else
+        {
+            float timer = float.Parse(tiempo.text);
+        }
+
 
         if (timer>minTimer)
         {
             timer = timer - Time.deltaTime;
             labelTimer.text = timer.ToString("0.0");
-            musica.Pause();
+            musica.Stop(); // la musica vuelve del principio
             isActive = true;
+
         }
+
         
         if (timer<=0 && isActive==true) 
         {
             musica.Play(); // la musica no sonaba porque estaba en el bucle infinito, entonces el timepo volviuas y todo eso
             isActive = false;
+            
         }
-
 
     }
 
     public void restart()
     {
-       timer = 5.0f;
+        timer = 5.0f;
        labelTimer.text = timer.ToString("0.0");
+        activarBool = !activarBool;
     }
 
     public void Pause()
     {
-        
+        isActive = !isActive;
     }
 }

@@ -15,6 +15,12 @@ public class SpaceCount : MonoBehaviour
 
     public Slider sliderTiempo;
 
+    public bool isActive = false;
+
+
+
+    public int record; // intento record
+
     private void Start()
     {
         sliderTiempo.maxValue = timer;
@@ -24,16 +30,19 @@ public class SpaceCount : MonoBehaviour
 
     void Update()
     {
-        if (timer > minTimer)
+
+        if (timer > minTimer && isActive ==true) //miuentras esta la cuenta atras, 
         {
             timer = timer - Time.deltaTime;
 
-            if (Input.GetKeyUp(KeyCode.Space) == true)
+            if (Input.GetKeyUp(KeyCode.Space) == true) // Veces pulsa espacio
             {
                 puntos = puntos + 1;
             }
         }
         labelCuenta.text = timer.ToString("0.00");
+
+       
 
         if(timer<=0)
         {
@@ -43,6 +52,8 @@ public class SpaceCount : MonoBehaviour
 
         sliderTiempo.value = timer;
 
+        //record = puntos;
+
     }
 
     public void Restart()
@@ -50,5 +61,10 @@ public class SpaceCount : MonoBehaviour
         timer = 5.0f;
         timer = timer - Time.deltaTime;
         puntos = 0;
+    }
+
+    public void BotonJugar()
+    {
+        isActive = !isActive;
     }
 }

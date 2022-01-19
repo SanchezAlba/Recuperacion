@@ -9,6 +9,7 @@ public class Calc : MonoBehaviour
  
     public TMP_InputField num1;
     public TMP_InputField num2;
+    
 
     public TextMeshProUGUI labelResultado;
 
