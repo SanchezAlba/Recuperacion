@@ -14,31 +14,16 @@ public class VidaController : MonoBehaviour
   
     void Start()
     {
-        sliderVida.value = 5;
-        gameOver = "";
-       
+        
     }
 
     void Update()
     {
-       if(sliderVida.value==0)
-        {
-            gameOver = "gameOver";
-        }
-    }
-
-
-    public void RestarVida()
-    {
-        sliderVida.value = sliderVida.value-1;
       
     }
 
 
-    public void Reiniciar()
-    {
-        sliderVida.value = 5;
-    }
+  
 
 
 }
