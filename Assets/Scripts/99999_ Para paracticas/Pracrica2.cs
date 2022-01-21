@@ -6,12 +6,5 @@ using TMPro;
 
 public class Pracrica2 : MonoBehaviour
 {
-
-
-    void Start()
-    {
-       
-    }
-
-  
+    
 }

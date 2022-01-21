@@ -6,16 +6,6 @@ using TMPro;
 
 public class NadaPracticas : MonoBehaviour
 {
-   
-
-    void Start()
-    {
-       
-    }
-
-    private void Update()
-    {
-     
-    }
 
 }
+

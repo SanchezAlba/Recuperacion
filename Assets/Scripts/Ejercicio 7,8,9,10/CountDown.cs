@@ -22,14 +22,14 @@ public class CountDown : MonoBehaviour
     {
         //float timer = float.Parse(tiempo.text); // Sigue sin ir
 
-        if(activarBool==true)
+        /*if(activarBool==true)
         {
             timer = timer - Time.deltaTime;
         }
         else
         {
             float timer = float.Parse(tiempo.text);
-        }
+        }*/
 
 
         if (timer>minTimer)
