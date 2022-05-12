@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Cambio escena.unity
+    guid: 305fade17c8ac1047b5d9249cdb94e8a
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scripts/Cambio Escena/Prueba escena.unity
+    guid: 39c1c11a16032944ab00817f6447947e
   m_configObjects: {}
